@@ -50,5 +50,5 @@ This project was built as an academic / practical system following real-world ba
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/mu-ride.git
-cd mu-ride
+git clone https://github.com/YOUR_USERNAME/MU--Ride.git
+cd MU--Ride
