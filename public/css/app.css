@@ -1,0 +1,130 @@
+:root {
+  --mu-gold: #f5c518;
+  --mu-gold-dark: #d4a70a;
+  --bg: #0d0d0d;
+  --card-bg: #161616;
+  --input-bg: #1f1f1f;
+  --text-main: #ffffff;
+  --text-muted: #a1a1a1;
+  --border: rgba(255,255,255,0.1);
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: black;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  background: var(--mu-gold);
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--mu-gold);
+}
+
+.btn-primary {
+  background: var(--mu-gold);
+  color: black;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* CARD */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input, select {
+  width: 100%;
+  padding: 12px;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: white;
+}
+
+/* RIDE */
+.ride h3 { margin: 0 0 6px; }
+.ride p { color: var(--text-muted); font-size: 14px; }
+
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.action-btn.primary {
+  background: var(--mu-gold);
+  color: black;
+  border: none;
+}
